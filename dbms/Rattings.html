@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rattings</title>
+<link rel="stylesheet" href="Rattings.css" />
+</head>
+
+<body>
+<div class="logo">
+<img src="logo.jpg" width="60px" height="60px"/>
+</div>
+<div class="nav">
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="Survey.html">Survey</a></li>
+<li><a href="Rattings.html">Rattings</a></li>
+<li><a href="tranlog.html">Logout</a></li>
+<li><a href="My profile.html"><img src="depositphotos_59426371-stock-illustration-woman-listening-to-music.jpg" width="30px" height="30px"/></a></li></ul>
+<div class="header"></div>
+<FORM NAME ="form1" METHOD ="GET" ACTION ="setSurvey.php">
+<?PHP print $wholeHTML; ?>
+<P><INPUT TYPE = "Submit" Name = "Submit1"  VALUE = "Set a Question"></P>
+
+</FORM>
+
+
+
+
+
+<?PHP
+print $question . "<BR>";
+print $answerA . " " . $imgTagA . " " . $percentA . "% " . $qA . "<BR>";
+print $answerB . " " .$imgTagB . " " . $percentB . "% " . $qB . "<BR>";
+print $answerC . " " .$imgTagC . " " . $percentC . "% " . $qC . "<BR>";
+print $answerD . " " .$imgTagD . " " . $percentD . "% " . $qD . "<BR>";
+
+?>
+</body>
+</html>

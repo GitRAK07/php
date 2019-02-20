@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sign-up</title>
+<link rel="stylesheet" href="trial.css" />
+</head>
+<body>
+<div class="login-box">
+<i class="fa fa-user-circle"></i>
+<h1>Sign-up</h1>
+<div class="textbox">
+<input type="text" placeholder="First name" name="" value="">
+</div>
+<div class="textbox">
+<input type="text" placeholder="Last name" name="" value="">
+</div>
+<div class="textbox">
+<input type="E-mail" placeholder="E-mail" name="" value="">
+</div>
+<div class="textbox">
+<i class="fa fa-lock"></i>
+<input type="password" placeholder="Create password" name="" value="">
+</div>
+<div class="textbox">
+<i class="fa fa-lock"></i>
+<input type="password" placeholder="Confirm password" name="" value="">
+</div>
+<div class="textbox">
+<input type="E-mail" placeholder="E-mail" name="" value="">
+</div>
+</div>
+<input class="btn" type="button" name="" value="Create account">
+<input class="button" type="button" name="" value="Cancel">
+</body>
+</html>
+
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Survey</title>
+<link rel="stylesheet" href="Survey.css" />
+</head>
+<div class="logo">
+<img src="logo.jpg" width="60px" height="60px"/>
+</div>
+<div class="nav">
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="Survey.html">Survey</a></li>
+<li><a href="Rattings.html">Rattings</a></li>
+<li><a href="tranlog.html">Logout</a></li>
+<li><a href="My profile.html"><img src="depositphotos_59426371-stock-illustration-woman-listening-to-music.jpg" width="30px" height="30px" /></a></li></ul></div><hr />
+<div class="header"></div>
+<div class="survey">
+<h1>YOUR opinion is our FUTURE</h1>
+<h2>Give your feedback to reach your desires to listen your favorite tunes....Attend a survey now...</h2></div><hr />
+<div class="qu">
+<FORM NAME ="form1" METHOD ="GET" ACTION ="setQuestion.php">
+<p> <INPUT TYPE = 'TEXT' Name ='question'  value="How long have you used our services?" maxlength="40"><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">Less than 6 months
+  <span class="checkmark"></span></label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">1 year to less than 3 years
+  <span class="checkmark"></span>
+</label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">3 years to less than 1 year
+  <span class="checkmark"></span>
+</label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">5 years or more
+  <span class="checkmark"></span>
+</label><br /></p>
+<p>
+<label class="container"> <INPUT TYPE = 'TEXT' Name ='question'  value="I would you rate my overall satisfaction with Juke-Box" size="50px" maxlength="100"><br />
+  <input type="radio" name="radio" maxlength="20">Very satisfied
+  <span class="checkmark"></span>
+</label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">Somewhat satisfied
+  <span class="checkmark"></span>
+</label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">Somewhat dissatisfied
+  <span class="checkmark"></span>
+</label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">very dissatisfied
+  <span class="checkmark"></span>
+</label><br /></p>
+<p> <INPUT TYPE = 'TEXT' Name ='question' value="Which singer songs you prefer most?" maxlength="60"><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">sonu nigam
+  <span class="checkmark"></span>
+</label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">Shreya ghoshal
+  <span class="checkmark"></span>
+</label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">Arijith singh
+  <span class="checkmark"></span>
+</label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">Arman Malik
+  <span class="checkmark"></span>
+</label><br /></p>
+<p><INPUT TYPE = 'TEXT' Name ='question'  value="Song having best melody voice? " maxlength="60"><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">sonu nigam
+  <span class="checkmark"></span>
+  </label><br />
+</label><label class="container" maxlength="20">
+  <input type="radio" name="radio">ajith singh
+  <span class="checkmark"></span>
+  </label><br />
+</label><label class="container" maxlength="20">
+  <input type="radio" name="radio">Shreya ghoshal
+  <span class="checkmark"></span>
+  </label><br />
+</label><label class="container">
+  <input type="radio" name="radio" maxlength="20">arman malik
+  <span class="checkmark"></span>
+</label><br /></p>
+<p><INPUT TYPE = 'TEXT' Name ='question'  value="The music director you like?" maxlength="60"><br />
+</label><label class="container">
+  <input type="radio" name="radio" maxlength="20">A.R.rahman
+  <span class="checkmark"></span>
+  </label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">Ilayaraaja
+  <span class="checkmark"></span>
+  </label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">arjun janya
+  <span class="checkmark"></span>
+  </label><br />
+<label class="container">
+  <input type="radio" name="radio" maxlength="20">devishree prasad
+  <span class="checkmark"></span>
+  <P>
+<?PHP print $question; ?>
+<P>
+<INPUT TYPE = 'Radio' Name ='q'  value= 'A' <?PHP print $answerA; ?>><?PHP print $A; ?>
+<P>
+<INPUT TYPE = 'Radio' Name ='q'  value= 'B' <?PHP print $answerB; ?>><?PHP print $B; ?>
+<P>
+<INPUT TYPE = 'Radio' Name ='q'  value= 'C' <?PHP print $answerC; ?>><?PHP print $C; ?>
+<P>
+
+<INPUT TYPE = "Submit" Name = "Submit1"  VALUE = "Click here to vote">
+<INPUT TYPE = "Hidden" Name = "h1"  VALUE = <?PHP print $qID; ?>>
+</FORM>
+
+</label><br /></p>
+<FORM NAME ="form1" METHOD ="GET" ACTION ="setSurvey.php">
+<?PHP print $wholeHTML; ?>
+<a href="Rattings.html"><input class="btn" type="submit" name="" value="Submit"></a></FORM>
+<a href="Home.html"><input class="button" type="button" name="" value="cancel"></a>
+</div>
+</body>
+</html>
